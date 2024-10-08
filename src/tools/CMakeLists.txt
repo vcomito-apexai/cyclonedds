@@ -13,7 +13,7 @@
 set(CMAKE_INSTALL_TOOLSDIR "${CMAKE_INSTALL_DATADIR}/${PROJECT_NAME}/tools")
 
 add_subdirectory(_confgen)
-if(BUILD_IDLC)
+if(BUILD_IDLC AND NOT DEFINED CMAKE_CROSSCOMPILING)
   add_subdirectory(idlpp)
   add_subdirectory(idlc)
 endif()

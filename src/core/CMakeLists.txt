@@ -11,7 +11,7 @@
 #
 include (GenerateExportHeader)
 
-add_library(ddsc)
+add_library(ddsc STATIC)
 
 if(BUILD_TESTING OR EXPORT_ALL_SYMBOLS)
   set_property(TARGET ddsc PROPERTY WINDOWS_EXPORT_ALL_SYMBOLS TRUE)

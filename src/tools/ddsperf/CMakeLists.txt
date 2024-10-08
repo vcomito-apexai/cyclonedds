@@ -10,6 +10,9 @@
 # SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause
 #
 
+
+set(BUILD_DDSPERF ON)
+
 if (BUILD_DDSPERF)
   include(Generate)
 

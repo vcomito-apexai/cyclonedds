@@ -51,13 +51,13 @@ target_include_directories(
   "$<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/>")
 
 
-find_package(OpenSSL REQUIRED)
-target_link_libraries(fuzz_handshake
-    fuzz_handshake_harness
-    ${CMAKE_BINARY_DIR}/../LPM/src/libfuzzer/libprotobuf-mutator-libfuzzer.a
-    ${CMAKE_BINARY_DIR}/../LPM/src/libprotobuf-mutator.a
-    protobuf::libprotobuf
-    CycloneDDS::ddsc
-    $ENV{LIB_FUZZING_ENGINE}
-    OpenSSL::SSL
-    stdc++)
+# find_package(OpenSSL REQUIRED)
+# target_link_libraries(fuzz_handshake
+#     fuzz_handshake_harness
+#     ${CMAKE_BINARY_DIR}/../LPM/src/libfuzzer/libprotobuf-mutator-libfuzzer.a
+#     ${CMAKE_BINARY_DIR}/../LPM/src/libprotobuf-mutator.a
+#     protobuf::libprotobuf
+#     CycloneDDS::ddsc
+#     $ENV{LIB_FUZZING_ENGINE}
+#     OpenSSL::SSL
+#     stdc++)

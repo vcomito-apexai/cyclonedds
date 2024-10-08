@@ -60,7 +60,7 @@ option(WERROR "Treat compiler warnings as errors" OFF)
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake/Modules")
 
 option(BUILD_IDLC "Build IDL preprocessor" ${not_crosscompiling})
-option(BUILD_DDSPERF "Build ddsperf tool" ${not_crosscompiling})
+option(BUILD_DDSPERF "Build ddsperf tool" ON)
 
 option(WITH_ZEPHYR "Build for Zephyr RTOS" OFF)
 
@@ -256,7 +256,7 @@ option(EXPORT_ALL_SYMBOLS "Export all symbols from the library." OFF)
 option(BUILD_IDLC_XTESTS "Build the idlc compile tests" OFF)
 
 # Disable building examples by default because it is not strictly required.
-option(BUILD_EXAMPLES "Build examples." OFF)
+option(BUILD_EXAMPLES "Build examples." ON)
 
 option(ENABLE_LTO "Enable link time optimization." ON)
 
